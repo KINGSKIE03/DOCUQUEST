@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="navbar.css" />
+  <link rel="stylesheet" href="forms.css" />
+  <link rel="stylesheet" href="footer.css" />
+  <link rel="stylesheet" href="loader.css" />
+  <link rel="stylesheet" href="toast.css" />
+  <link rel="icon" href="img/Big Logo 1.png" type="image/x-icon" />
+  <title>form</title>
+</head>
+
+<body>
+  <!---------------------navbar-------------------->
+  <header class="navbar">
+    <div class="nav-logo">
+      <img class="nav-img" src="img/DocuQuestBarangay Logo .png" alt="" />
+    </div>
+    <button class="hamburger-menu">
+      <i class="fa fa-bars"></i>
+    </button>
+    <nav class="navbar-item">
+      <ul class="navbar-btn">
+        <li><a class="nav-btn" href="landingPage.html">Home</a></li>
+        <li><a class="nav-btn" href="about us.html">About Us</a></li>
+        <li>
+          <a class="nav-btn" href="">Services<i class="fa-solid fa-caret-down"></i></a>
+          <ul class="dropdown">
+            <li>
+              <a href="">Barangay Certification<i class="fa-solid fa-caret-down"></i></a>
+              <ul class="certification-dropdown">
+                <li><a href="form.html">4P's Validation</a></li>
+                <li><a href="form.html">Barangay Clearance</a></li>
+                <li><a href="form.html">Certificate of Indigency</a></li>
+                <li><a href="form.html">Solo Parent ID</a></li>
+                <li><a href="form.html">Residency Certificate</a></li>
+                <li><a href="form.html">Business Permit</a></li>
+                <li><a href="form.html">Late Birth Registration</a></li>
+                <li><a href="form.html">Senior Citizen ID</a></li>
+                <link rel="icon" href="img/Big Logo 1.png" type="image/x-icon" />
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <ul class="officials-dropdown">
+          <li>
+            <a class="nav-btn" href="">Brgy. Officials <i class="fa-solid fa-caret-down"></i></a>
+            <ul class="brgy-officials">
+              <li>
+                <a href="officials-brgy-kapatagan.html">brgy. kapatagan</a>
+              </li>
+
+            </ul>
+          </li>
+        </ul>
+        <li><a class="nav-btn" href="events.html">Events</a></li>
+        <li><a class="nav-btn" href="login.html">Admin</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!---------------------navbar end-------------------->
+
+  <!---------------------sidebar-------------------->
+  <aside class="sidebar">
+    <button class="exit-btn">
+      <i class="fa-solid fa-xmark" style="color: #1e38e9"></i>
+    </button>
+    <nav class="sidebar-item">
+      <ul class="sidebar-btn">
+        <li><a href="landingPage.html">Home</a></li>
+        <li><a href="about us.html">About Us</a></li>
+        <li>
+          <a class="side-btn" href="">Services<i class="fa-solid fa-caret-down"></i></a>
+          <ul class="side-dropdown">
+            <li>
+              <a href="">Barangay Certification<i class="fa-solid fa-caret-down"></i></a>
+              <ul class="certification-sidedropdown">
+                <li><a href="form.html">4P's Validation</a></li>
+                <li><a href="form.html">Barangay Clearance</a></li>
+                <li><a href="form.html">Certificate of Indigency</a></li>
+                <li><a href="form.html">Solo Parent ID</a></li>
+                <li><a href="form.html">Residency Certificate</a></li>
+                <li><a href="form.html">Business Permit</a></li>
+                <li><a href="form.html">Late Birth Registration</a></li>
+                <li><a href="form.html">Senior Citizen ID</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="">Brgy. Officials <i class="fa-solid fa-caret-down"></i></a>
+          <ul class="side-dropdown">
+            <li><a href="officials-brgy-kapatagan.html">brgy. kapatagan</a></li>
+            <li><a href="officials-brgy-magnaga.html">brgy. magnaga</a></li>
+            <li><a href="officials-brgy-napnapan.html">brgy. napnapan</a></li>
+          </ul>
+        </li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="login.html">Admin</a></li>
+      </ul>
+    </nav>
+  </aside>
+  <!---------------------navbar end-------------------->
+
+  <section class="hero">
+    <div class="hero-text">
+      <h2>Barangay Certification</h2>
+      <h1>Form</h1>
+    </div>
+  </section>
+
+  <section class="form-box">
+    <div class="form1">
+      <div>
+        <h2>First Name *</h2>
+        <input class="input" type="text" required />
+      </div>
+      <div>
+        <h2>Middle Name *</h2>
+        <input class="input" type="text" required />
+      </div>
+      <div>
+        <h2>Last Name *</h2>
+        <input class="input" type="text" required />
+      </div>
+    </div>
+    <div class="form2">
+      <div>
+        <h2>Barangay *</h2>
+        <select name="barangay" class="input">
+          <option value="">KAPATAGAN</option>
+        </select>
+      </div>
+      <div>
+        <h2>Age *</h2>
+        <input class="input" type="text" required />
+      </div>
+      <div>
+        <h2>Status *</h2>
+        <input class="input" type="text" required />
+      </div>
+    </div>
+    <div class="form3">
+      <div>
+        <h2>Mobile Number *</h2>
+        <input class="input" type="tel" required />
+      </div>
+      <div>
+        <h2>Years of Stay *</h2>
+        <input class="input" type="text" required />
+      </div>
+      <div>
+        <h2>Purpose *</h2>
+        <select name="Purpose" class="input">
+          <option value="">none</option>
+          <option value="4p's Validation">4ps Validation</option>
+          <option value="Barangay Clearance">Barangay Clearance</option>
+          <option value="Certificate of Indigency">
+            Certificate of Indigency
+          </option>
+          <option value="Solo Parent ID">Solo Parent ID</option>
+          <option value="Residency Certificate">Residency Certificate</option>
+          <option value="Business Permit">Business Permit</option>
+          <option value="Senior Citizen ID">Senior Citizen ID</option>
+          <option value="Business Permit">Business Permit</option>
+        </select>
+      </div>
+    </div>
+    <div class="form4">
+      <div>
+        <h2>Name of Student/patient *</h2>
+        <input class="input" type="text" required />
+      </div>
+      <div>
+        <h2>Address *</h2>
+        <input class="input" type="text" required />
+      </div>
+      <div>
+        <h2>Relationship *</h2>
+        <input class="input" type="text" required />
+      </div>
+    </div>
+    <div class="email-form">
+      <h2>Email *</h2>
+      <input class="input-email" type="email" required />
+    </div>
+    <div class="submit-btn">
+      <button id="submit-btn">Submit</button>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-items">
+      <div class="footer-icons">
+        <a href=""><i class="fa-brands fa-facebook"></i></a>
+        <a href=""> <i class="fa-brands fa-instagram"></i></a>
+        <h2>No. 091234578911</h2>
+      </div>
+      <div class="footer-allRights">
+        <h2>© Start, 2025. All rights reserved.</h2>
+      </div>
+    </div>
+  </footer>
+
+  <div class="loader-wrapper">
+    <div class="loader"></div>
+  </div>
+
+  <div id="toast"></div>
+
+  <script src="loader.js"></script>
+  <script type="module" src="formsubmit.js"></script>
+  <script src="landingPage.js"></script>
+  <script>
+    const hamburgerMenu = document.querySelector(".hamburger-menu");
+    const sidebar = document.querySelector(".sidebar");
+    const exitbutton = document.querySelector(".exit-btn");
+
+    hamburgerMenu.addEventListener("click", () => {
+      sidebar.classList.toggle("open");
+    });
+
+    exitbutton.addEventListener("click", () => {
+      sidebar.classList.remove("open");
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Events</title>
+  <link rel="stylesheet" href="events.css" />
+  <link rel="stylesheet" href="navbar.css" />
+  <link rel="stylesheet" href="landingPage.css" />
+  <link rel="stylesheet" href="loader.css" />
+  <link rel="stylesheet" href="footer.css" />
+  <link rel="icon" href="img/Big Logo 1.png" type="image/x-icon" />
+  <script type="module" src="events.js"></script>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="nav-logo">
+      <img class="nav-img" src="img/DocuQuestBarangay Logo .png" alt="" />
+    </div>
+    <button class="hamburger-menu">
+      <i class="fa fa-bars"></i>
+    </button>
+    <nav class="navbar-item">
+      <ul class="navbar-btn">
+        <li><a class="nav-btn" href="landingPage.html">Home</a></li>
+        <li><a class="nav-btn" href="about us.html">About Us</a></li>
+        <li>
+          <a class="nav-btn" href="">Services<i class="fa-solid fa-caret-down"></i></a>
+          <ul class="dropdown">
+            <li>
+              <a href="">Barangay Certification<i class="fa-solid fa-caret-down"></i></a>
+              <ul class="certification-dropdown">
+                <li><a href="form.html">4P's Validation</a></li>
+                <li><a href="form.html">Barangay Clearance</a></li>
+                <li><a href="form.html">Certificate of Indigency</a></li>
+                <li><a href="form.html">Solo Parent ID</a></li>
+                <li><a href="form.html">Residency Certificate</a></li>
+                <li><a href="form.html">Business Permit</a></li>
+                <li><a href="form.html">Late Birth Registration</a></li>
+                <li><a href="form.html">Senior Citizen ID</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a class="nav-btn" href="officials-brgy-kapatagan.html">Brgy. Officials</a></li>
+        <li><a class="nav-btn" href="events.html">Events</a></li>
+        <li><a class="nav-btn" href="login.html">Admin</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <button class="exit-btn">
+      <i class="fa-solid fa-xmark" style="color: #1e38e9"></i>
+    </button>
+    <nav class="sidebar-item">
+      <ul class="sidebar-btn">
+        <li><a href="landingPage.html">Home</a></li>
+        <li><a href="about us.html">About Us</a></li>
+        <li>
+          <a class="side-btn" href="">Services<i class="fa-solid fa-caret-down"></i></a>
+          <ul class="side-dropdown">
+            <li>
+              <a href="">Barangay Certification<i class="fa-solid fa-caret-down"></i></a>
+              <ul class="certification-sidedropdown">
+                <li><a href="form.html">4P's Validation</a></li>
+                <li><a href="form.html">Barangay Clearance</a></li>
+                <li><a href="form.html">Certificate of Indigency</a></li>
+                <li><a href="form.html">Solo Parent ID</a></li>
+                <li><a href="form.html">Residency Certificate</a></li>
+                <li><a href="form.html">Business Permit</a></li>
+                <li><a href="form.html">Late Birth Registration</a></li>
+                <li><a href="form.html">Senior Citizen ID</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a href="officials-brgy-kapatagan.html">Brgy. Officials</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="login.html">Admin</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <!-- Events Hero -->
+  <div class="event-hero">
+    <h1>Upcoming Events</h1>
+  </div>
+
+  <!-- Events Section -->
+  <div class="event-container">
+    <div class="event-section-box">
+      <h2>Pulong Barangay: Community Assembly</h2>
+      <p><strong>Date:</strong> September 30, 2025</p>
+      <p><strong>Location:</strong> Barangay Kapatagan Covered Court</p>
+      <p>Join us for the quarterly community assembly to discuss ongoing projects, health programs, and resident
+        concerns.</p>
+    </div>
+
+    <div class="event-section-box">
+      <h2>Clean-Up Drive</h2>
+      <p><strong>Date:</strong> October 10, 2025</p>
+      <p><strong>Location:</strong> Barangay Proper & Coastal Area</p>
+      <p>Residents are invited to participate in a clean-up activity to promote environmental awareness and community
+        cooperation.</p>
+    </div>
+
+    <div class="event-section-box">
+      <h2>Senior Citizens’ Day</h2>
+      <p><strong>Date:</strong> October 20, 2025</p>
+      <p><strong>Location:</strong> Barangay Hall</p>
+      <p>A special celebration honoring our senior citizens with medical check-ups, games, and recognition of their
+        valuable contributions.</p>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-items">
+      <div class="footer-icons">
+        <a href=""><i class="fa-brands fa-facebook"></i></a>
+        <a href=""><i class="fa-brands fa-instagram"></i></a>
+        <h2>No. 091234578911</h2>
+      </div>
+      <div class="footer-allRights">
+        <h2>© Start, 2025. All rights reserved.</h2>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Loader -->
+  <div class="loader-wrapper">
+    <div class="loader"></div>
+  </div>
+
+  <script src="loader.js"></script>
+  <script>
+    const hamburgerMenu = document.querySelector(".hamburger-menu");
+    const sidebar = document.querySelector(".sidebar");
+    const exitbutton = document.querySelector(".exit-btn");
+
+    hamburgerMenu.addEventListener("click", () => {
+      sidebar.classList.toggle("open");
+    });
+
+    exitbutton.addEventListener("click", () => {
+      sidebar.classList.remove("open");
+    });
+  </script>
+</body>
+
+</html>

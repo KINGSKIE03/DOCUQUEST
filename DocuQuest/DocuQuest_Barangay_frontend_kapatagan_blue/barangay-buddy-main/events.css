@@ -1,0 +1,127 @@
+/* Updated CSS for events.css */
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  box-sizing: border-box;
+  margin: 0;
+  background: #f0f6ff;
+  color: #0a0a0a;
+}
+
+/* Hero Section */
+.event-hero {
+  width: 100%;
+  height: 115px;
+  background-color: blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 0;
+  box-sizing: border-box;
+}
+
+.event-hero h1 {
+  color: white;
+  font-size: 70px;
+  font-weight: bold;
+  margin: 0;
+  text-align: center;
+}
+
+/* Event Container */
+.event-container {
+  width: 100%;
+  margin-top: 30px;
+  flex-grow: 1;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Sort & Filter Bar */
+.sort-bar {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  margin-bottom: 25px;
+  padding: 10px 15px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sort-bar label {
+  font-weight: bold;
+  font-size: 0.95em;
+}
+
+.sort-bar select {
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 0.95em;
+}
+
+/* Event Section */
+.event-section-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.post-box1 {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  width: 90%;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.post-box1:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.12);
+}
+
+.post-username {
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 1.2em;
+  color: #0d6efd;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1200px) {
+  .post-box1 {
+    max-width: 90%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .event-hero h1 {
+    font-size: 50px;
+  }
+  .post-username {
+    font-size: 1.1em;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .event-hero h1 {
+    font-size: 35px;
+  }
+  .sort-bar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

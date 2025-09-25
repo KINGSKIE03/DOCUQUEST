@@ -1,0 +1,137 @@
+footer {
+  background-color: blue;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  box-sizing: border-box;
+  width: 100%;
+  margin-top: auto;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-icons {
+  font-size: 1em;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.footer-icons a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-icons a:hover {
+  color: #ffeb00;
+}
+
+.footer-icons i {
+  font-size: 1.2em;
+}
+
+.footer-icons h2 {
+  font-size: 1em;
+  margin: 0;
+}
+
+.footer-allRights {
+  font-size: 1em;
+}
+
+.footer-allRights h2 {
+  font-size: 1em;
+  margin: 0;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  .footer-icons {
+    font-size: 0.9em;
+  }
+
+  .footer-icons i {
+    font-size: 1.1em;
+  }
+
+  .footer-icons h2,
+  .footer-allRights h2 {
+    font-size: 0.9em;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .footer-icons {
+    font-size: 0.85em;
+  }
+
+  .footer-icons i {
+    font-size: 1em;
+  }
+
+  .footer-icons h2,
+  .footer-allRights h2 {
+    font-size: 0.85em;
+  }
+}
+
+/* DocuQuest theme overrides */
+:root {
+  --docuquest-primary: #0d6efd;
+  --docuquest-accent: #f6ae2d;
+  --docuquest-bg: #f7f9fb;
+  --docuquest-text: #1b1b1b;
+}
+body {
+  background: #f7f9fb;
+  color: #1b1b1b;
+}
+.navbar,
+.topbar,
+nav {
+  background: #0b5f73;
+}
+.button,
+button,
+.btn {
+  background: #f6ae2d;
+}
+
+/* Blue theme override */
+:root {
+  --docuquest-primary: #0d6efd;
+  --docuquest-accent: #339af0;
+  --docuquest-bg: #f0f6ff;
+  --docuquest-text: #0a0a0a;
+}
+body {
+  background: #f0f6ff;
+  color: #0a0a0a;
+}
+.navbar,
+.topbar,
+nav {
+  background: #0d6efd;
+}
+.button,
+button,
+.btn {
+  background: #339af0;
+  color: white;
+}
