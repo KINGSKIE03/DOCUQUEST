@@ -1,0 +1,161 @@
+/* Reset & Fonts */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background: #f0f6ff;
+  color: #0a0a0a;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header */
+.text-top {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 15px 30px;
+  background: #0d6efd;
+  color: white;
+}
+.text-top img {
+  height: 60px;
+  width: auto;
+}
+.text-top h1 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+/* Layout */
+.admin-items {
+  display: flex;
+  flex: 1;
+  height: calc(100vh - 90px);
+  overflow: hidden;
+}
+
+/* Sidebar */
+.sideMenu {
+  width: 220px;
+  background: white;
+  border-right: 1px solid #ddd;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.side-text button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding: 12px 20px;
+  font-size: 15px;
+  background: transparent;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: all 0.3s;
+  color: #333;
+  font-weight: 600;
+}
+.side-text button:hover {
+  background: #0d6efd;
+  color: white;
+}
+.side-text i {
+  font-size: 18px;
+}
+
+/* Dashboard */
+.dashboard {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  margin-bottom: 20px;
+}
+.card h2 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #0d6efd;
+}
+
+/* Sections */
+.section {
+  display: none;
+}
+.section.active {
+  display: block;
+}
+
+/* Resident Box */
+.resident-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+.resident-items {
+  flex: 1 1 150px;
+  text-align: center;
+}
+.resident-items h3 {
+  margin-top: 10px;
+  font-size: 15px;
+  font-weight: 600;
+}
+.circle {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: #0d6efd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  margin: 0 auto;
+  font-size: 18px;
+}
+
+/* Table */
+.residents-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+.residents-table th,
+.residents-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+  font-size: 14px;
+}
+.residents-table th {
+  background: #0d6efd;
+  color: white;
+  font-weight: 600;
+}
+.residents-table tr:nth-child(even) {
+  background: #f9f9f9;
+}
+
+/* Scrollable */
+.scrollable {
+  max-height: 250px;
+  overflow-y: auto;
+  padding-right: 5px;
+}

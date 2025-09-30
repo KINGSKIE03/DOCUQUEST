@@ -1,0 +1,263 @@
+.services-cards {
+  width: 100%;
+  max-width: 1500px;
+  height: auto;
+  margin: 150px auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.Services {
+  font-size: 70px;
+  font-weight: bold;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.services-card {
+  width: 285px;
+  height: 285px;
+  perspective: 1000px;
+}
+
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.services-card:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  backface-visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  padding: 20px;
+  box-shadow: 5px 5px 16px 3px rgba(0, 0, 0, 0.29);
+}
+
+.card-front {
+  background-color: #ffeb00;
+  color: #6ec207;
+}
+
+.card-back {
+  background-color: #6ec207;
+  color: #ffeb00;
+  transform: rotateY(180deg);
+  flex-direction: column;
+}
+
+.card-back p {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.card-back button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 12px;
+  background-color: #0b5f73;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.card-back button:hover {
+  background-color: rgb(0, 0, 145);
+}
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+  .Services {
+    font-size: 60px;
+  }
+  
+  .services-card {
+    width: 260px;
+    height: 260px;
+  }
+}
+
+@media (max-width: 992px) {
+  .Services {
+    font-size: 50px;
+  }
+  
+  .services-card {
+    width: 240px;
+    height: 240px;
+  }
+  
+  .card-front,
+  .card-back {
+    font-size: 22px;
+  }
+  
+  .card-back p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .services-cards {
+    margin: 100px auto;
+  }
+  
+  .Services {
+    font-size: 40px;
+  }
+  
+  .services-card {
+    width: 220px;
+    height: 220px;
+  }
+  
+  .card-front,
+  .card-back {
+    font-size: 20px;
+    padding: 15px;
+  }
+  
+  .card-back p {
+    font-size: 14px;
+  }
+  
+  .card-back button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 576px) {
+  .services-cards {
+    margin: 80px auto;
+  }
+  
+  .Services {
+    font-size: 32px;
+  }
+  
+  .services-card {
+    width: 200px;
+    height: 200px;
+  }
+  
+  .card-front,
+  .card-back {
+    font-size: 18px;
+    padding: 12px;
+  }
+  
+  .card-back p {
+    font-size: 13px;
+  }
+  
+  .card-back button {
+    padding: 6px 12px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 375px) {
+  .services-cards {
+    margin: 60px auto;
+  }
+  
+  .Services {
+    font-size: 28px;
+  }
+  
+  .services-card {
+    width: 180px;
+    height: 180px;
+  }
+  
+  .card-front,
+  .card-back {
+    font-size: 16px;
+    padding: 10px;
+  }
+  
+  .card-back p {
+    font-size: 12px;
+  }
+  
+  .card-back button {
+    padding: 5px 10px;
+    font-size: 12px;
+  }
+}
+
+/* Blue theme override */
+:root {
+  --docuquest-primary: #0d6efd;
+  --docuquest-accent: #339af0;
+  --docuquest-bg: #f0f6ff;
+  --docuquest-text: #0a0a0a;
+  --king-primary: #84994f;
+  --king-accent: #ffe797;
+  --king-orange: #fcb53b;
+  --king-red: #b45253;
+  --king-bg: #ffe797;
+  --king-text: #333;
+}
+
+body {
+  background: #f0f6ff;
+  color: #0a0a0a;
+}
+
+.navbar, .topbar, nav {
+  background: #0d6efd;
+}
+
+.button, button, .btn {
+  background: #339af0;
+  color: white;
+}
+
+.services-card .card-front {
+  background: var(--king-primary);
+  color: var(--king-accent);
+}
+
+.services-card .card-back {
+  background: var(--king-orange);
+  color: var(--king-primary);
+}
+
+.services-card button {
+  background: var(--king-orange);
+  color: var(--king-primary);
+  border: none;
+  font-weight: bold;
+  transition: background 0.3s, color 0.3s;
+}
+
+.services-card button:hover {
+  background: var(--king-red);
+  color: var(--king-accent);
+}

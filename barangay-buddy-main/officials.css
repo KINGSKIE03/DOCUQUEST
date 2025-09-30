@@ -1,0 +1,373 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins";
+}
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-bar,
+h2 {
+  display: flex;
+  margin: 0px 10px 0px 10px;
+}
+.bar-description {
+  background-color: blue;
+  width: 100%;
+  min-height: 300px;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.bar-description h1 {
+  font-size: clamp(36px, 8vw, 70px);
+  font-weight: bold;
+  color: white;
+  margin-bottom: 20px;
+  text-align: center;
+  width: 100%;
+}
+.bar-description p {
+  max-width: 770px;
+  width: 100%;
+  font-size: clamp(16px, 2vw, 20px);
+  color: white;
+  text-align: center;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+.captian-header {
+  text-align: center;
+  padding: 40px 20px;
+  width: 100%;
+}
+.captian-header h3 {
+  font-size: clamp(24px, 4vw, 50px);
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+  width: 100%;
+}
+.captian-header h2 {
+  font-size: clamp(20px, 3vw, 40px);
+  margin-bottom: 30px;
+  text-align: center;
+  width: 100%;
+  display: block;
+}
+.captain {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.pics {
+  margin: 20px;
+  text-align: center;
+}
+.pics img {
+  max-width: 150px;
+  height: auto;
+}
+.cap-pic {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+}
+.top-row,
+.top-kagawads,
+.kagawads {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 20px;
+}
+.official {
+  margin: 10px;
+  text-align: center;
+  font-size: clamp(14px, 1.5vw, 18px);
+  flex: 0 1 250px;
+}
+.official img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+.official h4 {
+  font-size: clamp(16px, 1.8vw, 20px);
+  margin: 10px 0;
+}
+.official p {
+  color: #666;
+}
+footer {
+  background-color: #6ec207;
+  color: white;
+  padding: 20px; /* Adjust overall footer padding */
+  text-align: center; /* Center footer content */
+  box-sizing: border-box;
+  width: 100%;
+  margin-top: 50px;
+}
+.footer-items {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+  justify-content: space-between; /* Distribute space between items */
+  align-items: center;
+  gap: 20px; /* Adjust gap between footer items */
+  max-width: 1200px; /* Limit maximum width of footer items */
+  margin: 0 auto; /* Center footer items */
+}
+.footer-icons {
+  font-size: 1em;
+  display: flex;
+  align-items: center;
+}
+.footer-icons a {
+  color: white;
+  margin-left: 15px;
+  text-decoration: none; /* Remove underlines from links */
+}
+.footer-icons a:hover {
+  color: #ffeb00;
+}
+.footer-icons i {
+  font-size: 1.5em;
+  margin-right: 5px;
+}
+.footer-allRights {
+  font-size: 0.9em;
+}
+/* Media Queries */
+@media screen and (max-width: 1200px) {
+  .captain {
+    gap: 15px;
+  }
+  .pics img {
+    max-width: 120px;
+  }
+  .cap-pic {
+    width: 200px;
+    height: 200px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .bar-description {
+    padding: 30px 15px;
+  }
+  .captian-header {
+    padding: 30px 15px;
+  }
+  .captain {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+  }
+  .pics {
+    margin: 10px;
+  }
+  .top-row,
+  .top-kagawads,
+  .kagawads {
+    flex-direction: row;
+    gap: 20px;
+  }
+  .official {
+    flex: 0 1 200px;
+  }
+  .official img {
+    width: 180px;
+    height: 180px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .bar-description {
+    padding: 20px 10px;
+  }
+  .captian-header {
+    padding: 20px 10px;
+  }
+  .captain {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+  .pics img {
+    max-width: 100px;
+  }
+  .cap-pic {
+    width: 180px;
+    height: 180px;
+  }
+  .top-row,
+  .top-kagawads,
+  .kagawads {
+    flex-direction: row;
+    gap: 15px;
+  }
+  .official {
+    flex: 0 1 150px;
+  }
+  .official img {
+    width: 150px;
+    height: 150px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .bar-description {
+    padding: 20px 10px;
+  }
+
+  .captian-header {
+    padding: 20px 10px;
+  }
+
+  .captain {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .pics {
+    margin: 5px;
+  }
+
+  .pics img {
+    max-width: 80px;
+  }
+
+  .cap-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+  }
+
+  .top-row,
+  .top-kagawads,
+  .kagawads {
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .official {
+    flex: 0 1 140px;
+  }
+
+  .official img {
+    width: 140px;
+    height: 140px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .bar-description {
+    padding: 15px 8px;
+  }
+
+  .captian-header {
+    padding: 15px 8px;
+  }
+
+  .captain {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .pics {
+    margin: 4px;
+  }
+
+  .pics img {
+    max-width: 70px;
+  }
+
+  .cap-pic {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+  }
+
+  .top-row,
+  .top-kagawads,
+  .kagawads {
+    flex-direction: row;
+    gap: 8px;
+  }
+
+  .official {
+    flex: 0 1 130px;
+  }
+
+  .official img {
+    width: 130px;
+    height: 130px;
+  }
+}
+
+/* DocuQuest theme overrides */
+:root {
+  --docuquest-primary: #0d6efd;
+  --docuquest-accent: #f6ae2d;
+  --docuquest-bg: #f7f9fb;
+  --docuquest-text: #1b1b1b;
+}
+body {
+  background: #f7f9fb;
+  color: #1b1b1b;
+}
+.navbar,
+.topbar,
+nav {
+  background: #0b5f73;
+}
+.button,
+button,
+.btn {
+  background: #f6ae2d;
+}
+
+/* Blue theme override */
+:root {
+  --docuquest-primary: #0d6efd;
+  --docuquest-accent: #339af0;
+  --docuquest-bg: #f0f6ff;
+  --docuquest-text: #0a0a0a;
+}
+body {
+  background: #f0f6ff;
+  color: #0a0a0a;
+}
+.navbar,
+.topbar,
+nav {
+  background: #0d6efd;
+}
+.button,
+button,
+.btn {
+  background: #339af0;
+  color: white;
+}

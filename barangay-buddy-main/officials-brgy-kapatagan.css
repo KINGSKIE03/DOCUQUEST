@@ -1,0 +1,54 @@
+/* Define the color palette for the King theme */
+:root {
+  --king-primary: #84994f; /* Primary color */
+  --king-accent: #ffe797;  /* Accent color */
+  --king-orange: #fcb53b;  /* Orange color */
+  --king-red: #b45253;     /* Red color */
+  --king-bg: #ffe797;      /* Background color */
+  --king-text: #333;       /* Text color */
+}
+
+/* Apply the background and text color to the body */
+body {
+  background: var(--king-bg);
+  color: var(--king-text);
+}
+
+/* Style the navbar, hero section, and footer with primary background and accent text color */
+.navbar,
+.officials-hero,
+footer {
+  background: var(--king-primary);
+  color: var(--king-accent);
+}
+
+/* Style the hero section heading with orange color */
+.officials-hero h1 {
+  color: var(--king-orange);
+}
+
+/* Style the container in the officials section with accent background color */
+.officials-container {
+  background: var(--king-accent);
+}
+
+/* Style individual official cards with orange background, primary text color, and shadow */
+.official {
+  background: var(--king-orange);
+  color: var(--king-primary);
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(132,153,79,0.12);
+  margin-bottom: 24px;
+  padding: 24px;
+}
+
+/* Style the footer icons with red color */
+.footer-icons i {
+  color: var(--king-red);
+}
+
+/* Style the footer text in the all rights section and icons section with orange color */
+.footer-allRights h2,
+.footer-icons h2 {
+  color: var(--king-orange);
+}
